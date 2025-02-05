@@ -21,8 +21,45 @@ export class AddDoctorComponent implements OnInit {
   id !: string;
   buttonName !: string;
 
-  departments : string[] = ['Orthopédie','Cardiologie','Oto-rhino-laryngologie','Ophtalmologie','Psychiatrie','Médecine interne','Radiologie','Chirurgie','Pédiatrie','Neurologie','Urologie','Anesthésiologie','Néphrologie','Neurochirurgie','Gastro-entérologie','Pneumologie','Chirurgie générale','Intensive care medicine','Oncology','Pathology','Emergency medicine','Neonatology','Hematology','Pharmacy','Physical medicine and rehabilitation','Vascular surgery','Geriatrics','Gynaecology','Cardiac surgery','Outpatient department','Nuclear medicine','Infectious diseases','Clinical pathology','Intensive care unit','operating room','Casualty department']
-
+  departments: string[] = [
+    'Orthopédie',
+    'Cardiologie',
+    'Oto-rhino-laryngologie',
+    'Ophtalmologie',
+    'Psychiatrie',
+    'Médecine interne',
+    'Radiologie',
+    'Chirurgie',
+    'Pédiatrie',
+    'Neurologie',
+    'Urologie',
+    'Anesthésiologie',
+    'Néphrologie',
+    'Neurochirurgie',
+    'Gastro-entérologie',
+    'Pneumologie',
+    'Chirurgie générale',
+    'Médecine des soins intensifs',
+    'Oncologie',
+    'Pathologie',
+    'Médecine d\'urgence',
+    'Néonatologie',
+    'Hématologie',
+    'Pharmacie',
+    'Médecine physique et réadaptation',
+    'Chirurgie vasculaire',
+    'Gériatrie',
+    'Gynécologie',
+    'Chirurgie cardiaque',
+    'Consultation externe',
+    'Médecine nucléaire',
+    'Maladies infectieuses',
+    'Pathologie clinique',
+    'Unité de soins intensifs',
+    'Salle d\'opération',
+    'Service des accidents'
+  ];
+  
   constructor(
     private fb : FormBuilder,
     @Inject(MAT_DIALOG_DATA) data : any,
