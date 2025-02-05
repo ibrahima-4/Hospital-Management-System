@@ -38,8 +38,8 @@ export class DoctorComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.data = {
-      title : 'Register doctor',
-      buttonName : 'Register'
+      title : 'Formulaire médecin',
+      buttonName : 'Ajouter'
     }
 
     const dialogRef = this.dialog.open(AddDoctorComponent, dialogConfig);
@@ -60,8 +60,8 @@ export class DoctorComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.data = row;
-    dialogConfig.data.title = "Edit doctor";
-    dialogConfig.data.buttonName = "Update";
+    dialogConfig.data.title = "Supprimer medecin";
+    dialogConfig.data.buttonName = "Mettre à jour";
     dialogConfig.data.birthdate = row.birthdate.toDate();
 
     const dialogRef = this.dialog.open(AddDoctorComponent, dialogConfig);
@@ -69,7 +69,7 @@ export class DoctorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(data => {
       if(data) {
         this.dataApi.updateDoctor(data);
-        this.openSnackBar("Doctor is updated successfully.", "OK")
+        this.openSnackBar("Medecin mise à jour avec succée ", "OK")
       }
     })
   }
@@ -79,7 +79,7 @@ export class DoctorComponent implements OnInit {
     dialogConfig.disableClose = false;
     dialogConfig.autoFocus = true;
     dialogConfig.data = {
-      title : 'Delete doctor',
+      title : 'Supprimer medecin',
       doctorName : row.name
     }
 
@@ -88,7 +88,7 @@ export class DoctorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(data => {
       if(data) {
         this.dataApi.deleteDoctor(row.id);
-        this.openSnackBar("Doctor deleted successfully.", "OK")
+        this.openSnackBar("Medecin supprimé avec succée.", "OK")
       }
     })
   }

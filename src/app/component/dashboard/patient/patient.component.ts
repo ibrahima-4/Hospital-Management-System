@@ -41,8 +41,8 @@ export class PatientComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.data = {
-      title : 'Register Patient',
-      buttonName : 'Register'
+      title : 'Formulaire Patient',
+      buttonName : 'Ajouter'
     }
 
     const dialogRef = this.dialog.open(AddPatientComponent, dialogConfig);
@@ -101,8 +101,8 @@ export class PatientComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.data = row;
-    dialogConfig.data.title = "Edit patient";
-    dialogConfig.data.buttonName = "Update";
+    dialogConfig.data.title = "Supprimer patient";
+    dialogConfig.data.buttonName = "Mettre à jour";
     dialogConfig.data.admission_date = row.admission_date.toDate();
 
     console.log(dialogConfig.data);
@@ -122,7 +122,7 @@ export class PatientComponent implements OnInit {
     dialogConfig.disableClose = false;
     dialogConfig.autoFocus = true;
     dialogConfig.data = {
-      title : 'Delete patient',
+      title : 'Supprimer patient',
       patientName : row.patient_name
     }
 

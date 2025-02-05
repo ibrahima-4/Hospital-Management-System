@@ -85,8 +85,8 @@ export class ViewDoctorComponent implements OnInit {
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.data = row;
-    dialogConfig.data.title = "Edit patient";
-    dialogConfig.data.buttonName = "Update";
+    dialogConfig.data.title = "Supprimer patient";
+    dialogConfig.data.buttonName = "Mettre à jour";
     dialogConfig.data.admission_date = row.admission_date.toDate();
 
     console.log(dialogConfig.data);
@@ -96,7 +96,7 @@ export class ViewDoctorComponent implements OnInit {
     dialogRef.afterClosed().subscribe(data => {
       if(data) {
         this.dataApi.updatePatient(data);
-        this.openSnackBar("Patient is updated successfully.", "OK")
+        this.openSnackBar("Patient mis à jour avec succée.", "OK")
       }
     })
   }
