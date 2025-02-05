@@ -13,7 +13,7 @@
                     placeholder="Ex: Pape Ibrahima MBAYE"
                     formControlName="patient_name"
                     required>
-            <mat-error *ngIf="form.get('patient_name')?.invalid || form.get('patient_name')?.dirty || form.get('patient_name')?.touched">Enter full name</mat-error>
+            <mat-error *ngIf="form.get('patient_name')?.invalid || form.get('patient_name')?.dirty || form.get('patient_name')?.touched">Entrez votre prénom et nom</mat-error>
           </mat-form-field>
 
           <mat-form-field>
@@ -22,7 +22,7 @@
                     placeholder="9865452152"
                     formControlName="mobile"
                     required>
-            <mat-error *ngIf="form.get('mobile')?.invalid || form.get('mobile')?.dirty || form.get('mobile')?.touched">Enter valid mobile number</mat-error>
+            <mat-error *ngIf="form.get('mobile')?.invalid || form.get('mobile')?.dirty || form.get('mobile')?.touched">Entrez un numéro de téléphone valide</mat-error>
           </mat-form-field>
 
           <mat-form-field>
@@ -31,7 +31,7 @@
                     placeholder="ex. medicines"
                     formControlName="prescription"
                     required>
-            <mat-error *ngIf="form.get('prescription')?.invalid || form.get('prescription')?.dirty || form.get('prescription')?.touched">Enter valid prescription </mat-error>
+            <mat-error *ngIf="form.get('prescription')?.invalid || form.get('prescription')?.dirty || form.get('prescription')?.touched">Entrez un ordonnance valide </mat-error>
           </mat-form-field>
         </div>
       </mat-grid-tile>

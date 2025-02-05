@@ -8,9 +8,9 @@
       <mat-grid-tile>
         <div>
           <mat-form-field>
-            <mat-label>Prenom et nom</mat-label>
+            <mat-label>Prénom et nom</mat-label>
             <input matInput
-                    placeholder="Ex. code logic"
+                    placeholder="Ex. Pape Ibrahima MBAYE"
                     formControlName="name"
                     required>
             <mat-error *ngIf="form.get('name')?.invalid || form.get('name')?.dirty || form.get('name')?.touched">Entrez le nom complet</mat-error>
@@ -22,7 +22,7 @@
                     placeholder="9865452152"
                     formControlName="mobile"
                     required>
-            <mat-error *ngIf="form.get('mobile')?.invalid || form.get('mobile')?.dirty || form.get('mobile')?.touched">Entrez un numéro de mobile valide</mat-error>
+            <mat-error *ngIf="form.get('mobile')?.invalid || form.get('mobile')?.dirty || form.get('mobile')?.touched">Entrez un numéro de téléphone valide</mat-error>
           </mat-form-field>
 
           <mat-form-field>
