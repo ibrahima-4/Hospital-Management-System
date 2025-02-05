@@ -21,7 +21,7 @@ export class AddDoctorComponent implements OnInit {
   id !: string;
   buttonName !: string;
 
-  departments : string[] = ['Orthopedics','Cardiology','Otorhinolaryngology','Ophthalmology','Psychiatry','Internal medicine','Radiology','Surgery','Pediatrics','Neurology','Urology','Anesthesiology','Nephrology','Neurosurgery','Gastroenterology','Pulmonology','General surgery','Intensive care medicine','Oncology','Pathology','Emergency medicine','Neonatology','Hematology','Pharmacy','Physical medicine and rehabilitation','Vascular surgery','Geriatrics','Gynaecology','Cardiac surgery','Outpatient department','Nuclear medicine','Infectious diseases','Clinical pathology','Intensive care unit','operating room','Casualty department']
+  departments : string[] = ['Orthopédie','Cardiologie','Oto-rhino-laryngologie','Ophtalmologie','Psychiatrie','Médecine interne','Radiologie','Chirurgie','Pédiatrie','Neurologie','Urologie','Anesthésiologie','Néphrologie','Neurochirurgie','Gastro-entérologie','Pneumologie','Chirurgie générale','Intensive care medicine','Oncology','Pathology','Emergency medicine','Neonatology','Hematology','Pharmacy','Physical medicine and rehabilitation','Vascular surgery','Geriatrics','Gynaecology','Cardiac surgery','Outpatient department','Nuclear medicine','Infectious diseases','Clinical pathology','Intensive care unit','operating room','Casualty department']
 
   constructor(
     private fb : FormBuilder,
