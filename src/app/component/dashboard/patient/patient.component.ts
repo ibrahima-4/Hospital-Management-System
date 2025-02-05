@@ -50,7 +50,7 @@ export class PatientComponent implements OnInit {
     dialogRef.afterClosed().subscribe(data => {
       if(data) {
         this.dataApi.addPatient(data);
-        this.openSnackBar("Registration of patient is successful.", "OK")
+        this.openSnackBar("L'enregistrement du patient est réussi.", "OK")
       }
     })
   }
@@ -112,7 +112,7 @@ export class PatientComponent implements OnInit {
     dialogRef.afterClosed().subscribe(data => {
       if(data) {
         this.dataApi.updatePatient(data);
-        this.openSnackBar("Patient is updated successfully.", "OK")
+        this.openSnackBar("Le patient est mis à jour avec succès.", "OK")
       }
     })
   }
@@ -132,7 +132,7 @@ export class PatientComponent implements OnInit {
       if(data) {
         console.log(row);
         this.dataApi.deletePatient(row.patient_id);
-        this.openSnackBar("Patient deleted successfully.", "OK")
+        this.openSnackBar("Patient supprimé avec succès.", "OK")
       }
     })
   }

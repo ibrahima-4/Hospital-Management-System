@@ -35,7 +35,7 @@
 
         <!-- Department Column -->
         <ng-container matColumnDef="doctor">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Docteur </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Médecin </th>
           <td mat-cell *matCellDef="let row"> {{getDoctorName(row.doctor_id)}} </td>
         </ng-container>
 
@@ -78,7 +78,7 @@
         </tr>
       </table>
 
-      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>               
     </div>
 
 </div>
